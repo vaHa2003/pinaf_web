@@ -245,7 +245,12 @@ function Home() {
                             />
                           </div>
                           <div className={cx("product-content")}>
-                            <h3 className={cx("product-name")}>
+                            <h3
+                              className={cx("product-name")}
+                              style={{
+                                fontFamily: "Libre Baskerville, sans-serif",
+                              }}
+                            >
                               {product.title}
                             </h3>
                             <p className={cx("price-block")}>

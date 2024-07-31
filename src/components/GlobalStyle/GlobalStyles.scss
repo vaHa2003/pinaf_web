@@ -1,47 +1,49 @@
-@import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* loader */
 .loading {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 6px;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    cursor: pointer;
+  width: 6px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsl(164, 41%, 27%);
-    border-radius: 0.5rem;
-    cursor: pointer;
+  background-color: hsl(164, 41%, 27%);
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 // bôi chọn chữ
 ::selection {
-    color: #fff;
-    background-color: rgb(41, 98, 83);
+  color: #fff;
+  background-color: rgb(41, 98, 83);
 }
