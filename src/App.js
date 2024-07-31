@@ -6,6 +6,7 @@ import ProductPage from "./page/ProductsPage";
 import AdminLayout from "./components/layout/AdminLayout/AdminLayout";
 import User from "./page/UserAdmin";
 import { Helmet } from "react-helmet";
+import "./index.css";
 
 function App() {
   const isAuthorization = localStorage.getItem("tokenAdmin");
