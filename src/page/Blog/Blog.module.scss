@@ -1,0 +1,197 @@
+$fontFamilyDefault: "Libre Baskerville", sans-serif;
+$colorDefault: #79a206;
+$colorHighlight: #296253;
+$fontFamilyDefaultt: "Poppins", sans-serif;
+$colorContent: #51544f;
+$color-White: #fff;
+$background: #f8f8f8;
+.blog {
+  position: relative;
+  & .blog__container {
+    & .blog__layout {
+      position: relative;
+      & .blog__img {
+        height: 500px;
+        background: url("https://assets.website-files.com/63708df071bc73798fae96ee/6378b145707d74104f13ad8a_image-here%201.jpg")
+          top center / cover no-repeat;
+      }
+
+      & .blog__breadcrumb-title {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+
+        & h4 {
+          font-size: 4rem;
+          font-family: $fontFamilyDefault;
+          color: $colorHighlight;
+          margin-bottom: 14px;
+        }
+
+        & span {
+          display: flex;
+          gap: 1rem;
+          font-size: 0.938rem;
+          color: #333;
+          font-weight: 500;
+
+          & a {
+            text-decoration: none;
+            color: #474747;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+          }
+
+          & a:hover {
+            color: $colorDefault;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-block: 2rem;
+  padding-top: 60px;
+  gap: 2rem;
+
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+
+  & .card__header {
+    overflow: hidden;
+
+    & .card__image {
+      transition: transform 0.6s ease;
+
+      &:hover {
+        transform: scale(1.2) rotateZ(5deg);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 0.5rem;
+
+    h4 {
+      font-size: 1.25rem;
+      text-transform: capitalize;
+      font-family: $fontFamilyDefault;
+      font-weight: 400;
+    }
+    p {
+      font-family: $fontFamilyDefaultt;
+      color: $colorContent;
+      font-size: 0.9rem;
+      line-height: 30px;
+    }
+    small {
+      color: $colorContent;
+      font-size: 0.938rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .card__time {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: $colorContent;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &__image {
+        border-radius: 50%;
+      }
+
+      &__info > small {
+        color: #666;
+      }
+    }
+  }
+}
+
+.footer__blog {
+  text-align: center;
+  padding: 20px 20px;
+  & button {
+    font-size: 0.875rem;
+    border: none;
+    padding: 14px 42px;
+    font-family: $fontFamilyDefaultt;
+    font-weight: 600;
+    background-color: $colorDefault;
+    color: #fff;
+    min-width: 140px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  & button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+
+  & + .tag {
+    margin-left: 0.5em;
+  }
+
+  &-blue {
+    background: #56ccf2;
+    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    color: #fafafa;
+  }
+
+  &-brown {
+    background: #d1913c;
+    background: linear-gradient(to bottom, #ffd194, #d1913c);
+    color: #fafafa;
+  }
+
+  &-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+  }
+}

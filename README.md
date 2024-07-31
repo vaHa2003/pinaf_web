@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Pinaf
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tổng Quan:
 
-## Available Scripts
+- Pinaf là một trang web chuyên bán các loại cây với đủ các kiểu dáng và hình dáng khác nhau, được bán với giá phải chăng, kèm theo các ưu đãi đặc biệt.
 
-In the project directory, you can run:
+## Bắt Đầu:
 
-### `npm start`
+- Tên Dự Án: Pinaf
+- Trước Khi Khởi Tạo Dự Án: `npm create-react-app Pinaf`
+- Phiên Bản React: 18.2.0
+- Để Chạy Dự Án: `npm start`
+- Truy cập dự án tại: [http://localhost:3600/](http://localhost:3600/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Công Nghệ Sử Dụng:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Animation:
 
-### `npm test`
+- ScrollReveal: [https://scrollrevealjs.org/](https://scrollrevealjs.org/)
+- Framer Motion: [https://www.framer.com/motion/introduction/](https://www.framer.com/motion/introduction/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Slideshow:
 
-### `npm run build`
+- Swiper: [https://swiperjs.com/demos](https://swiperjs.com/demos)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### API:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Axios: [https://axios-http.com/vi/docs/intro](https://axios-http.com/vi/docs/intro)
+- JSON Server: [https://github.com/typicode/json-server](https://github.com/typicode/json-server)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Thư Viện Component:
 
-### `npm run eject`
+- Material-UI (Mui): [https://mui.com/material-ui/getting-started/installation/](https://mui.com/material-ui/getting-started/installation/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Icons:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Radix: [https://www.radix-ui.com/](https://www.radix-ui.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Thư Viện Form và Validation:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Để quản lý các form và validation, chúng tôi sử dụng thư viện Formik và Yup.
+- Formik: [https://formik.org/](https://formik.org/)
+- Yup: [https://github.com/jquense/yup](https://github.com/jquense/yup)
 
-## Learn More
+## Thay đổi tiêu đề(title)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- react-helmet : [https://www.npmjs.com/package/react-helmet]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Gửi email trực tiếp từ mã của bạn
 
-### Code Splitting
+- emailjs:[https://www.npmjs.com/package/emailjs]
+- quản lý xem email phản hồi của khách hàng : [https://dashboard.emailjs.com/admin/templates/j2lw7ue/content]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## login
 
-### Analyzing the Bundle Size
+- firebase :[https://console.firebase.google.com/u/0/project/pinaf-844a1/authentication/users?pli=1]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## chức năng giỏ hàng
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Context (quản lý giỏ hàng)

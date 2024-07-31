@@ -1,0 +1,11 @@
+$font-family-default: "SF Mono";
+$color_default: #296253;
+
+.product_container {
+  font-family: $font-family-default;
+}
+
+.product_title {
+  margin-bottom: 1rem;
+  color: $color_default;
+}

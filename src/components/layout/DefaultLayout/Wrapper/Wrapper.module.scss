@@ -1,0 +1,41 @@
+// đặt biến root scss
+$wrapper-color: #296253;
+$wrapper-white: #fff;
+
+.wrapper {
+    height: 40px;
+    background-color: $wrapper-color;
+    position: relative;
+
+    & .wrapper__content {
+        line-height: 40px;
+        text-align: center;
+
+        & .warpper__content-center {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: $wrapper-white;
+            display: inline-block;
+        }
+    }
+
+    & .warpper__content-icon_close {
+        position: absolute;
+        right: 10px;
+        font-size: 32px;
+        cursor: pointer;
+        font-weight: 200;
+        color: $wrapper-white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 148px;
+    }
+
+    .warpper__content-center {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

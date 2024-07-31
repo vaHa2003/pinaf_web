@@ -1,0 +1,17 @@
+.productpage__description {
+    font-family: 'SF Mono', monospace;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-justify: inter-word;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    /* background-color: #fefefe; */
+    /* max-width: 400px; */
+    /* margin: 0 auto; */
+    /* text-align: justify; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* overflow: auto; */
+    //  line-height: 2rem;
+}

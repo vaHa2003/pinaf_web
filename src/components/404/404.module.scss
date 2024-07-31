@@ -1,0 +1,121 @@
+.container__404 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper__error {
+    font-size: 10rem;
+    color: hsl(164, 41%, 27%);
+    font-weight: 500;
+}
+.wrapper h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.wrapper .message {
+    font-size: 1.1rem;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+
+.message__link {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    transform: translatey(0px);
+    animation: animation__link 0.9s ease-in-out infinite;
+}
+
+.wrapper .btn {
+    background: hsl(164, 41%, 27%);
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 12px;
+    color: #fff;
+    border: 1px solid hsl(164, 41%, 27%);
+    border-radius: 36px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.wrapper .btn:hover {
+    opacity: 0.92;
+}
+.wrapper .btn__product {
+    margin-top: 50px;
+}
+
+// mobile
+@media screen and (max-width: 480px) {
+    .wrapper h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 4px;
+    }
+
+    .wrapper__error {
+        font-size: 6rem;
+    }
+    .wrapper .message {
+        width: 100%;
+    }
+}
+
+// Tablet (Tablet Landscape)
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper h1 {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    .wrapper .message {
+        width: 80%;
+    }
+}
+
+//Tablet (Tablet Portrait)
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .wrapper h1 {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    .wrapper .message {
+        width: 100%;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 1025px) {
+}
+
+// Large Desktops
+@media screen and (min-width: 1440px) {
+}
+
+@keyframes animation__link {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
