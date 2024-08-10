@@ -12,6 +12,16 @@ Pinaf là một trang web chuyên bán các loại cây với đủ các kiểu 
 - **Để Chạy Dự Án:** `npm start`
 - **Truy cập dự án tại:** [http://localhost:3600/](http://localhost:3600/)
 
+### Chức năng đã thực hiện:
+- **Trang user**: Người dùng có thể mua hàng (sử dụng Context) và đăng nhập bằng Google hoặc qua form
+đăng nhập (sử dụng Redux Toolkit). Ngoài ra, người dùng có thể đăng xuất.
+  - Link: https://pinaf-web.vercel.app/
+  - Password Login: Tên đăng nhập: 0367107822", password: "Hoa362003@@"
+- **Trang admin**: Quản lý sản phẩm với các chức năng thêm, sửa, xoá, tìm kiếm sản phẩm, user. Trang admin
+cũng có chức năng đăng nhập
+  - Link: https://pinaf-web.vercel.app/adminlayout
+  - Password: manv: "2109610462",password: Vietanh2003@@,
+
 ## Công Nghệ Sử Dụng
 
 ### Animation
@@ -57,4 +67,5 @@ Pinaf là một trang web chuyên bán các loại cây với đủ các kiểu 
 ### Chức Năng Giỏ Hàng
 
 - **Context API:** Quản lý giỏ hàng
+
 
